@@ -27,8 +27,7 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-          skopeo copy docker://docker.io/redis:7.2.4 docker://registry.cn-hangzhou.aliyuncs.com/tzhky/redis:7.2.4
-          skopeo copy docker://docker.io/docker.elastic.co/elasticsearch/elasticsearch:8.11.3 docker://registry.cn-hangzhou.aliyuncs.com/tzhky/docker.elastic.co/elasticsearch/elasticsearch:8.11.3
+           skopeo copy docker://docker.io/elasticsearch/elasticsearch:8.11.3 docker://registry.cn-hangzhou.aliyuncs.com/tzhky/elasticsearch/elasticsearch:8.11.3
           
          
          
